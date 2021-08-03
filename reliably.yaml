@@ -1,0 +1,13 @@
+apiVersion: reliably.com/v1
+kind: Objective
+metadata:
+  labels:
+    name: 99% of requests  over last 1 hour
+    service: my spring boot app
+spec:
+  indicatorSelector:
+    prometheus_query: sum by (uri) (http_server_requests_seconds_count{status="200",uri="/"})
+      / sum by (uri) (http_server_requests_seconds_count{uri="/"})
+    prometheus_url: http://localhost:9090
+  objectivePercent: 99
+  window: 1h0m0s
