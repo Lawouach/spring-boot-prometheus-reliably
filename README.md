@@ -33,13 +33,14 @@ section as follows:
 ```
 
 Once that is done, you can run
-[reliably](https://reliably.com/docs/getting-started/) as follows:
+[reliably](https://reliably.com/docs/getting-started/) as follows (you need
+at least reliably 0.23.0):
 
 ```
 # refresh indicators every 10s
-$ reliably slo agent -i10
+$ reliably slo agent -i10 -m reliably.yaml
 ```
 
 ```
-$ reliably slo report -w
+$ reliably slo report -w -m reliably.yaml
 ```
