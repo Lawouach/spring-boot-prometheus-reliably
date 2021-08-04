@@ -44,3 +44,10 @@ $ reliably slo agent -i10 -m reliably.yaml
 ```
 $ reliably slo report -w -m reliably.yaml
 ```
+
+<pre><font color="#AE81FF">Refreshing SLO report every 3 seconds.</font> Press CTRL+C to quit.
+                                                  <font color="#AE81FF"><b> </b></font>  <font color="#AE81FF"><b>  Current</b></font>  <font color="#AE81FF"><b>Objective</b></font>  <font color="#AE81FF"><b>/ Time Window</b></font>  <font color="#AE81FF"><b> </b></font>  <font color="#AE81FF"><b>Type</b></font>  <font color="#AE81FF"><b> </b></font>  <font color="#AE81FF"><b>Trend</b></font>      
+  Service #1: my spring boot app                  
+  ✅ 99% of requests return 2xx over last 1 hour        <font color="#A6E22E"><b>99.42%</b></font>        99%  / 1h0m0s                   <font color="#F92672">✕</font> <font color="#F92672">✕</font> <font color="#F92672">✕</font> <font color="#F92672">✕</font> <font color="#A6E22E">✓</font>  
+
+</pre>
