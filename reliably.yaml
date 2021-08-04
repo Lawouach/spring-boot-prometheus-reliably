@@ -2,7 +2,7 @@ apiVersion: reliably.com/v1
 kind: Objective
 metadata:
   labels:
-    name: 99% of requests  over last 1 hour
+    name: 99% of requests return 2xx over last 1 hour
     service: my spring boot app
 spec:
   indicatorSelector:
